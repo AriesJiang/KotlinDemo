@@ -4,7 +4,7 @@ import android.util.Log
 import com.yidong.extension.string
 
 /**
- * Created by Administrator on 2017/11/28.
+ * Created by Aries on 2017/11/28.
  */
 interface Base{
     fun print()
@@ -18,7 +18,7 @@ class BaseImpl(val x: Int) : Base{
 
 class Printer(b: Base) : Base by b
 
-fun test(){
+fun kotlinBy(){
     val a = BaseImpl(5)
     Printer(a).print()
 }

@@ -3,7 +3,7 @@ package com.yidong;
 import android.util.Log;
 
 /**
- * Created by Administrator on 2017/11/23.
+ * Created by Aries on 2017/11/23.
  */
 
 public class JavaSample {

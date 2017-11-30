@@ -1,10 +1,11 @@
 package com.yidong
 
 import android.util.Log
-import com.yidong.by.test
+import com.yidong.by.PropertyExample
+import com.yidong.by.kotlinBy
 
 /**
- * Created by Administrator on 2017/11/23.
+ * Created by Aries on 2017/11/23.
  */
 class Sample {
 
@@ -173,7 +174,7 @@ class Sample {
             sample.attr()
             sample.property()
 
-            test();
+            by()
         }
 
         fun <T> max(collection: Collection<T>, less: (T, T) -> Boolean): T? {
@@ -182,6 +183,16 @@ class Sample {
                 if (max == null || less(max, it))
                     max = it
             return max
+        }
+
+        //委托
+        fun by() {
+            //类委托
+            kotlinBy()
+            //属性委托
+            val e = PropertyExample()
+            println(e.p)
+            e.p = "NEW"
         }
     }
 }

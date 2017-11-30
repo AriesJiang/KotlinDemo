@@ -5,7 +5,7 @@ import android.util.Log
 import android.widget.Toast
 
 /**
- * Created by jiangyidong on 2017/11/28.
+ * Created by Aries on 2017/11/28.
  * 扩展定义在file中，不能是class 相关博客 http://www.jianshu.com/p/2cfd5cf301db
  */
 fun Any?.string() : String = if(this == null) "null obj" else toString()  // 扩展方法
